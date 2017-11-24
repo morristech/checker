@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Aufbau Checker</string>
+
+    <string name="exam_number">Examination Number</string>
+    <string name="exam_year">Year</string>
+    <string name="exam_type">Type</string>
+    <string name="card_serial">Card Serial</string>
+    <string name="card_pin">Card PIN</string>
+    <string name="check_result">Check Result</string>
 </resources>
