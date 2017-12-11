@@ -1,99 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
- <LinearLayout
-      xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:tools="http://schemas.android.com/tools"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_weight="1"
-    android:padding="16dp"
-      android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/bg"
-      tools:context="com.okmichaels.aufbauchecker.MainActivity">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp">
 
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Candidate Information"
-          android:textSize="24sp"
-          android:padding="16dp"
-          android:gravity="center_horizontal"
-          android:textStyle="bold"
-          android:textColor="@android:color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candidate Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#cccccc"
+        />
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#cccccc">
 
-          <EditText
-              android:id="@+id/exam_number"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:hint="@string/exam_number"
-              android:background="@android:color/white"
-              android:textColorHint="@android:color/black"
-              android:padding="16dp"
-              android:textColor="@android:color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:hint="Exam Number"
+            android:inputType="textPersonName"
+            android:textColor="#cccccc"
+            android:textSize="20sp" />
 
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:baselineAligned="false"
-          android:layout_marginTop="16dp">
+    </android.support.design.widget.TextInputLayout>
 
-          <EditText
-              android:id="@+id/exam_year"
-              android:layout_height="wrap_content"
-              android:layout_width="0dp"
-              android:layout_weight="0.5"
-              android:hint="@string/exam_year"
-              android:background="@android:color/white"
-              android:textColorHint="@android:color/black"
-              android:padding="8dp"
-              android:textColor="@android:color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="16dp">
 
-          <EditText
-              android:id="@+id/exam_type"
-              android:layout_height="wrap_content"
-              android:layout_width="0dp"
-              android:layout_weight="0.5"
-              android:hint="@string/exam_type"
-              android:layout_marginStart="8dp"
-              android:background="@android:color/white"
-              android:textColorHint="@android:color/black"
-              android:padding="8dp"
-              android:textColor="@android:color/black"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#cccccc">
 
-      </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffff"
+                android:hint="Exam Year"
+                android:inputType="textPassword"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
 
-          <EditText
-              android:layout_marginTop="16dp"
-              android:id="@+id/card_serial"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:hint="@string/card_serial"
-              android:background="@android:color/white"
-              android:textColorHint="@android:color/black"
-              android:padding="8dp"
-              android:textColor="@android:color/black"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#cccccc">
 
-          <EditText
-              android:layout_marginTop="16dp"
-              android:id="@+id/card_pin"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:hint="@string/card_pin"
-              android:background="@android:color/white"
-              android:textColorHint="@android:color/black"
-              android:padding="8dp"
-              android:textColor="@android:color/black"/>
-      <Button
-          android:id="@+id/check_result"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:background="#A44CD8"
-          android:textColor="#fff"
-          android:text="@string/check_result"
-          android:shadowRadius="0.4"
-          android:layout_marginTop="24dp"
-          />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffff"
+                android:hint="Exam Type"
+                android:inputType="textPassword"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
 
-  </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:hint="Card Serial"
+            android:inputType="text"
+            android:textColor="#cccccc"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:hint="Card PIN"
+            android:inputType="textPassword"
+            android:textColor="#cccccc"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/check_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#79a209df"
+        android:text="Check Result"
+        android:textColor="#cccccc" />
+
+</LinearLayout>
