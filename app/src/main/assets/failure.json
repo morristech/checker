@@ -1,0 +1,11 @@
+[
+  {
+    "http_code": 302,
+    "success": false,
+    "content": {
+      "error_message": "INVALID SCRATCH CARD DETAIL",
+      "error_title": "INVALID SCRATCH CARD DETAIL",
+      "title": "Object moved"
+    }
+  }
+]

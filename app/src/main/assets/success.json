@@ -1,0 +1,24 @@
+[
+  {
+    "http_code": 200,
+    "success": true,
+    "content": {
+      "title": "\r\n\tWAECDIRECT ONLINE - RESULTS\r\n",
+      "candidate_number": "AGADA JULIET AMUYINI",
+      "candidate_name": "5081802023",
+      "exam_type": "NOV/DEC WASSCE2015",
+      "center": "Federal Government College, Otobi",
+      "grades": {
+        "ECONOMICS": "B2",
+        "GEOGRAPHY": "A1",
+        "ENGLISH LANGUAGE": "A1",
+        "FURTHER MATHEMATICS": "B3",
+        "MATHEMATICS": "B2",
+        "AGRICULTURAL SCIENCE": "A1",
+        "BIOLOGY": "A1",
+        "CHEMISTRY": "B3",
+        "PHYSICS": "A1"
+      }
+    }
+  }
+]

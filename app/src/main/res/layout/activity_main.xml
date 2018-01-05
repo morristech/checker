@@ -113,8 +113,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:background="#79a209df"
+        android:background="#8D475C"
         android:text="Check Result"
         android:textColor="#cccccc" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/spinner"
+        android:src="@android:drawable/spinner_background"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
