@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.okmichaels.aufbauchecker.http.ApiService;
 
 import java.util.List;
 
@@ -25,12 +24,9 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        stringView = findViewById(R.id.result_dump);
-
-        getJsonData();
     }
 
-    private void getJsonData() {
+    /*private void getJsonData() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://forum.manjaro.org")
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
@@ -61,5 +57,5 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
 
-    }
+    }*/
 }

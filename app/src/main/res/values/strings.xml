@@ -7,4 +7,11 @@
     <string name="card_serial">Card Serial</string>
     <string name="card_pin">Card PIN</string>
     <string name="check_result">Check Result</string>
+
+    <string name="waec_logo_description">WAEC Official Logo</string>
+
+    <string name="candidate_name_text">Cand. Name:</string>
+    <string name="candidate_number_text">Cand. Number:</string>
+    <string name="center_name_text">Center Name:</string>
+    <string name="exam_year_text">Exam Year:</string>
 </resources>

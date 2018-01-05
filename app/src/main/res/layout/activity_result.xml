@@ -1,162 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
+    tools:context=".ResultActivity"
+    android:padding="16dp">
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.okmichaels.aufbauchecker.ResultActivity">
-        <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_header">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/waec_logo"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/waec_logo_description"
+            android:src="@drawable/waec"/>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/result_dump" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:id="@+id/layout_name_wrapper"
+            android:layout_below="@id/waec_logo">
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Mathematics"/>
-
+                android:text="@string/candidate_name_text"
+                android:paddingTop="5dp"
+                android:id="@+id/hint_candidate_name"
+                />
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="C4"/>
-        </LinearLayout>
-        <LinearLayout
+                android:id="@+id/tv_candidate_name"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/hint_candidate_name"
+                android:layout_marginStart="5dp"
+                android:text="Enyi Dapriye Abraham"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:id="@+id/layout_number_wrapper"
+            android:layout_below="@id/layout_name_wrapper">
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="English Language"/>
-
+                android:text="@string/candidate_number_text"
+                android:paddingTop="5dp"
+                android:id="@+id/hint_exam_number"
+                />
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="A1"/>
-        </LinearLayout>
-        <LinearLayout
+                android:id="@+id/tv_exam_number"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/hint_exam_number"
+                android:layout_marginStart="5dp"
+                android:text="89909399AF"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:id="@+id/layout_center_name_wrap"
+            android:layout_below="@id/layout_number_wrapper">
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Economics"/>
-
+                android:text="@string/center_name_text"
+                android:paddingTop="5dp"
+                android:id="@+id/hint_center_number"
+                />
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="A1"/>
-        </LinearLayout>
-        <LinearLayout
+                android:id="@+id/tv_center_name"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/hint_center_number"
+                android:layout_marginStart="5dp"
+                android:text="Federal Government College, Otobi"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:id="@+id/layout_year_wrap"
+            android:layout_below="@id/layout_center_name_wrap">
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Physics"/>
+                android:text="@string/exam_year_text"
+                android:paddingTop="5dp"
+                android:id="@+id/hint_exam_year"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_exam_year"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/hint_exam_year"
+                android:layout_marginStart="5dp"
+                android:text="MAY/JUN 2016"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </RelativeLayout>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="B2"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:orientation="horizontal"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Civic Education"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_result"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="A1"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="horizontal"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Chemistry"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="B3"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:orientation="horizontal"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Agricultural Science"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="B2"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="horizontal"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.8"
-                android:text="Geography"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:text="C5"/>
-        </LinearLayout>
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
