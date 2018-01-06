@@ -1,5 +1,13 @@
 package com.okmichaels.aufbauchecker.model;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+
+import java.lang.reflect.Type;
+import java.text.ParseException;
+
 /**
  * holds the model for a http response from the API server
  */
@@ -7,13 +15,13 @@ package com.okmichaels.aufbauchecker.model;
 public class Response {
     String http_code;
     boolean success;
-    String content;
+    Content content;
 
     public Response() {
         this(null, false, null);
     }
 
-    public Response(String code, boolean status, String ctn) {
+    public Response(String code, boolean status, Content ctn) {
         this.http_code = code;
         this.success = status;
         this.content = ctn;
@@ -35,11 +43,11 @@ public class Response {
         this.success = success;
     }
 
-    public String getContent() {
+    public Content getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(Content content) {
         this.content = content;
     }
 }
